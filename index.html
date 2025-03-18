@@ -6,42 +6,24 @@
         <link rel="stylesheet" href="style.css">
         <title>Ramen Rating App</title>
     </head>
-    <body>
-     <div class="main">
-        <div class="head">
-            <h2> WELCOME TO RAMEN RATING APP</h2>
-        <div class="form">
-            <form class="Ramen Name" novalidate>
-              <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">Ramen name</label>
-                <input type="text" class="form-control" id="Ramen" value="Mark" required>
-              </div>
-              <div class="Restaurant">
-                <label for="validationCustom02" class="form-label">Restaurant</label>
-                <input type="text" class="form-control" id="Restaurant" value="Otto" required>
-              </div>
-              <div class="Image">
-                <label for="validationCustomUsername" class="form-label">Image</label>
-                <div class="input-group">
-                  <span class="input-group-text" id="Image"></span>
-                  <input type="file" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                </div>
-              </div>
-              <div class="Rating">
-                <label for="validationCustom03" class="form-label">Rating</label>
-                <input type="text" class="form-control" id="Rating" required>
-              </div>
-              <div class="Comment">
-                <label for="validationCustom04" class="Comment">Comment</label>
-                <input type="text" class="form-select" id="Comment" required>
-              <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit form</button>
-              </div>
-            </form>
-        </div>
-     </div>
-
-
-    
-    </body>
+    <div class="main">
+      <h1>RAMEN RATING APP</h1>
+      <div id="ramen menu" class="ramen menu"></div>
+      <div id="ramen detail" class="ramen detail">
+        <img id="detail-image" src="" alt="Ramen Image">
+        <h2 id="detail-name"></h2>
+        <h3 id="detail-restaurant"></h3>
+        <p>Rating:<span id="detail-comment"></span></p>
+      </div>
+      <form id="Add new ramen">
+        <h2>Add New Ramen</h2>
+        <input id="New-ramen" type="text" placeholder="Ramen" required>
+        <input id="New-restaurant" type="text" placeholder="Restaurant" required>
+        <input id="New-rating" type="number" placeholder="Rating(1-5)" min="1" max="5" step="0.1" required>
+        <input id="New-ramen-image" type="text" placeholder="Ramen Image" required>
+        <textarea name="Comment" id="new-comment" placeholder="Comment"></textarea>
+        <button type="submit">Add New Ramen</button>
+      </form>
+      <
+    </div>
 </html>
