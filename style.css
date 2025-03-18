@@ -1,3 +1,93 @@
-.MAIN {
-    margin-left: 40%;
+body {
+    margin: 0%;
+    padding: 20px;
+    font-family: arial, sans-serif;
+}
+
+h2, h3 {
+    margin: 0%;
+}
+
+#ramen-menu {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#ramen-menu img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#ramen-menu img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#ramen-detail {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+#ramen-detail h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#ramen-detail h3 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#ramen-detail p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #666;
+}
+
+#new-ramen {
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 400px;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#new-ramen input,
+#new-ramen textarea {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #add;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#new-ramen input[type="number"] {
+    width: calc(100% - 22px)
+}
+
+#new-ramen button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff6f61;
+    transition: background-color 0.2s;
+
+}
+
+#new-ramen button:hover {
+    background-color: #ff4a3d;
 }

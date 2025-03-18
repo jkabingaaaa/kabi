@@ -6,24 +6,28 @@
         <link rel="stylesheet" href="style.css">
         <title>Ramen Rating App</title>
     </head>
-    <div class="main">
-      <h1>RAMEN RATING APP</h1>
-      <div id="ramen menu" class="ramen menu"></div>
-      <div id="ramen detail" class="ramen detail">
-        <img id="detail-image" src="" alt="Ramen Image">
-        <h2 id="detail-name"></h2>
-        <h3 id="detail-restaurant"></h3>
-        <p>Rating:<span id="detail-comment"></span></p>
+    <body>
+      <div class="main">
+        <h1>RAMEN RATING APP</h1>
+        <div id="ramen-menu" class="ramen menu"></div>
+        <div id="ramen-detail" class="ramen detail">
+          <img id="detail-image" src="" alt="Ramen Image">
+          <h2 id="detail-name"></h2>
+          <h3 id="detail-restaurant"></h3>
+          <p>Rating:<span id="detail-comment"></span></p>
+        </div>
+        <form id="Add new ramen">
+          <h2>Add New Ramen</h2>
+          <input id="New-ramen" type="text" placeholder="Ramen" required>
+          <input id="New-restaurant" type="text" placeholder="Restaurant" required>
+          <input id="New-rating" type="number" placeholder="Rating(1-5)" min="1" max="5" step="0.1" required>
+          <input id="New-ramen-image" type="text" placeholder="Ramen Image" required>
+          <textarea name="Comment" id="new-comment" placeholder="Comment"></textarea>
+          <button type="submit">Add New Ramen</button>
+        </form>
+        
       </div>
-      <form id="Add new ramen">
-        <h2>Add New Ramen</h2>
-        <input id="New-ramen" type="text" placeholder="Ramen" required>
-        <input id="New-restaurant" type="text" placeholder="Restaurant" required>
-        <input id="New-rating" type="number" placeholder="Rating(1-5)" min="1" max="5" step="0.1" required>
-        <input id="New-ramen-image" type="text" placeholder="Ramen Image" required>
-        <textarea name="Comment" id="new-comment" placeholder="Comment"></textarea>
-        <button type="submit">Add New Ramen</button>
-      </form>
-      <
-    </div>
+      <script src="script.js"></script>
+    </body>
+   
 </html>
